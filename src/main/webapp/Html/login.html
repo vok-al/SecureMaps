@@ -1,0 +1,88 @@
+<!-- Webelopment	5IM8 
+•	Pérez Sánchez Fernando Alberto -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Securemaps</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../Css/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="Images/favicon.ico"/>
+</head>
+
+<body>
+  <div class="cont">
+      <!--Formulario LOGIN-->
+          
+    <div class="form sign-in">
+      <h2>Iniciar Sesión</h2>
+      <label>
+        <span>Nombre de usuario</span>
+        <form name="Login" action="../Jsp/login.jsp" method="post">
+            <input type="text" name="email" id="correo" placeholder="per_fer32" requiered>
+      </label>
+      <label>
+        <span>Contraseña</span>
+        <input type="password" name="password" id="contra" placeholder="********" required>
+      </label>
+      <button class="submit" type="submit" onclick="validar_formulario()">Siguiente</button>
+      
+      </form>
+      <p class="forgot-pass">¿Has olvidado tu contraseña?</p>
+      <div class="social-media">
+        <ul>
+          <li><img src="../Images/facebook.png" alt="Facebook"></li>
+          <li><img src="../Images/twitter.png" alt="twitter"></li>
+          <li><img src="../Images/linkedin.png" alt="linkedin"></li>
+          <li><img src="../Images/instagram.png" alt="instagram"></li>
+        </ul>
+      </div>
+    </div>
+
+      
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>¿Nuevo aquí?</h2>
+          <p>¡Regístrate y descubre una gran cantidad de lugares!</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>¿Ya estás registrado?</h2>
+          <p>Si ya te has registrado antes, solamente inicia sesión. </p><p>¡Te extrañamos!</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Registrarse</span>
+          <span class="m-in">Iniciar Sesión</span>
+        </div>
+      </div>
+        
+       <!--Formulario REGISTRO-->
+      <div class="form sign-up">
+          <form name="registro" method="post" action="../Jsp/registrar.jsp">
+              
+        <h2>Registrarse</h2>
+        <label>
+            <input type="text" placeholder="Nombre de usuario" name="user" id="user" onkeypress="return username(event)" required>
+        </label>
+        <label>
+          <input type="text" placeholder="Nombre" name="nombre" id="name" onkeypress="return nombre(event)" required>
+        </label>
+        <label>
+            <input type="email" placeholder="Correo Electrónico" name="correo" id="correo2" required>
+        </label>
+        <label>
+          <input type="password" placeholder="Contraseña" name="contrasenia" id="contra1" required>
+        </label>
+        <label>
+          <input type="password" placeholder="Confirmar contraseña" id="contra2" required>
+        </label>
+        <button type="button" class="submit" onclick="valida()">Registrarme ahora</button>
+          </form>  
+      </div>
+        
+    </div>
+  </div>
+<script type="text/javascript" src="../Js/login.js"></script>
+</body>
+</html>
